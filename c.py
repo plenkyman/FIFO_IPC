@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os
+import os, sys
 
 def create_fifo():
     try:
@@ -21,5 +21,5 @@ if __name__ == "__main__":
         read_messages()
     except KeyboardInterrupt:
         os.remove("this.pipe")
-        print("by by")
-        #sys.exit(0)
+        print("    by by, do good today!")
+        sys.exit(0)
