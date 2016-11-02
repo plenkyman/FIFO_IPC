@@ -16,5 +16,10 @@ def read_messages():
                 time.sleep(.3)
 
 if __name__ == "__main__":
-    create_fifo()
-    read_messages()
+    try:
+        create_fifo()
+        read_messages()
+    except KeyboardInterrupt:
+        os.remove("this.pipe")
+        print("by by")
+        #sys.exit(0)
