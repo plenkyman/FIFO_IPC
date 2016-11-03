@@ -1,5 +1,5 @@
 # FIFO_IPC
-my own reminder about implementing fifo's in python3
+my personal reminder about implementing fifo's in python3
 
 a.py and b.py write messages to c.py
 
